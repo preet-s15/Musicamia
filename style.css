@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.web{
+    margin-top: 60px;
+    text-align: center;
+   /* font-size: 3rem;*/
+    /*font-family:'Times New Roman', Times, serif;*/
+    color: rgb(253, 224, 167);
+    
+}
+.web h1{
+    border-left: 2px solid ;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    } 
+    70%,90%{
+        width: 100%;
+    }
+}
+.web h1:hover{
+    color: rgb(28, 38, 13);
+}
+/*.new:hover{
+    background-color:antiquewhite;
+    transition: 0.5s ease;
+    border-radius: 50%;
+    
+}*/
+/*.new a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: rgb(50, 50, 38);
+    padding: 8px 20px;
+    justify-content:start ;
+    align-items:start;
+}*/
+.navbar{
+   /* background-color: rgb(245, 185, 106);*/
+    position: relative;
+   }
+.navbar ul li{
+    display: inline-flex;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    margin: 15px 0px;
+}
+
+.navbar ul li a {
+   /* color: rgb(50, 50, 38);*/color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 8px 20px ;
+    transition: 0.5s ease;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.navbar ul li a:hover{
+    background-color: antiquewhite;
+    color: rgb(6, 6, 66);
+    border-radius: 50%;
+}
+.hello{
+    width: 70vw;
+    margin-top: 150px;
+    
+}
+.image{
+    margin-top: 100px;
+    width: 35vw;
+    height: 45vh;
+   /* background-image: url(./me.jpeg);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*border-radius: 0%;*/
+    border-radius: 50%;
+    /*border: 4px solid black;*/
+}
+.hello h1{
+    font-family: 'Ysabeau Infant', sans-serif;
+}
+.social{
+    width: 100vw;
+    height: 150vh;
+    background-color: #E78BC2;
+    text-align: center;
+    
+}
+.social h1{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(81, 35, 43)
+}
+.acc{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+/*.acc a{
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}*/
+.para{
+    color: black;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.button a{
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+.button{
+    margin-top: 20px;
+    size: 20px;
+    background-color: cadetblue;
+    border-radius: 50%;
+}
+#form{
+    text-align: center;
+    justify-content: center;
+
+}
+@media(max-width:680px){
+    .social{
+       /* width: 700px;*/
+        height: 1500px;
+    }
+    }
